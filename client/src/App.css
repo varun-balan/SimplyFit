@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+}
+
+p {
+    margin: 2px;
+    padding: 2px;
+}
+
+p.main-home-text {
+    padding: 8px;
+    font-family: 'Helvetica Neue';
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+span.workoutDisplay {
+    background-color: lightskyblue;
+    display: inline-block;
+}
+
+span.workoutHeader {
+    background-color: #007bff;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+button.deleteButton {
+    background-color: lightskyblue;
+    font-size: small;
+    float: right;
+    border-color: darkred;
+    border-top-color: lightskyblue;
+    margin-left: 3px;
+    margin-right: 3px;
+    color: darkred;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+button.editButton {
+    background-color: lightskyblue;
+    font-size: small;
+    border-color: darkred;
+    border-top-color: lightskyblue;
+    margin-left: 3px;
+    margin-right: 3px;
+    float: right;
+    color: darkblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
