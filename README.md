@@ -2,7 +2,9 @@
 
 ## To run the app
 1. Navigate to the client directory, run `npm start`
-2. Navigate to the server directory, run `npm start`
+2. Set up MongoDB cluster
+3. Paste MongoDB Url into .env.test file
+4. Navigate to the server directory, run `npm start`
 
 On your local machine, client runs on `localhost` port `3000` and server runs on `5000`
 
