@@ -3,7 +3,6 @@ import workoutTypes from "./workoutType.js";
 
 import { useDispatch, useSelector } from "react-redux";
 import { createWorkout, updateWorkout } from "../actions/activities.js";
-// import { updateWorkout } from "../../../server/controllers/activities";
 
 const AddActivityBar = ({ currentId, setCurrentId }) => {
   const [workoutData, setWorkoutData] = useState({
@@ -48,6 +47,10 @@ const AddActivityBar = ({ currentId, setCurrentId }) => {
     clear();
   };
 
+  function confirmationMessage() {
+    alert("Workout Added Successfully")
+  }
+
   return (
     <div className="p-md-5">
       <p className="text-dark main-home-text">
@@ -91,7 +94,7 @@ const AddActivityBar = ({ currentId, setCurrentId }) => {
                   })
                 }
               >
-                <option key="default"></option>
+                <option key="default"/>
                 <option key="barbell">Barbell</option>
                 <option key="dumbbell">Dumbbell</option>
                 <option key="kettlebell">Kettlebell</option>
@@ -146,6 +149,7 @@ const AddActivityBar = ({ currentId, setCurrentId }) => {
                 }
               />
             </div>
+
           </div>
           <hr />
           <button type="submit" className="btn btn-outline-primary m-1">
