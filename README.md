@@ -4,7 +4,7 @@
 1. Navigate to the client directory, run `npm start`
 2. Navigate to the server directory, run `npm start`
 
-On kiyour local machine, client runs on `localhost` port `3000` and server runs on `5000`
+On your local machine, client runs on `localhost` port `3000` and server runs on `5000`
 
 #### Todos
 1. Add logic where no weight option needs to have weight 0.
