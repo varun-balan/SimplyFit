@@ -11,10 +11,10 @@ On your local machine, client runs on `localhost` port `3000` and server runs on
 #### Todos
 1. Add logic where no weight option needs to have weight 0.
 2. Add a confirmation message when an activity has been added or edited.
-
-
+3. Fix warning of unnamed function export in reducer
+4. Message when unable to add workout due to incomplete fields
 
 #### Acknowledgements
-The main source of learning (and `react-redux` boilerplate code) was from [JavaScript Mastery - YouTube](https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A).\
+The main source of learning was from [JavaScript Mastery - YouTube](https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A).\
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
