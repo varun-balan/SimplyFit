@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 import Workout from "./workout/workout.jsx";
-import { deleteWorkout } from "../../actions/activities.js";
 
 const Activities = ({ setCurrentId }) => {
   const activities = useSelector((state) => state.activities);

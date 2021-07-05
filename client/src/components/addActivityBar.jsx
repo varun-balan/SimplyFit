@@ -47,10 +47,6 @@ const AddActivityBar = ({ currentId, setCurrentId }) => {
     clear();
   };
 
-  function confirmationMessage() {
-    alert("Workout Added Successfully")
-  }
-
   return (
     <div className="p-md-5">
       <p className="text-dark main-home-text">
