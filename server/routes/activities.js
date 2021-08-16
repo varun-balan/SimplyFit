@@ -10,7 +10,7 @@ import {
 
 import auth from "../middleware/auth.js";
 
-router.get("/", auth, getWorkouts);
+router.get("/", getWorkouts);
 router.post("/", auth, createWorkout);
 router.patch("/:id", auth, updateWorkout);
 router.delete("/:id", auth, deleteWorkout);

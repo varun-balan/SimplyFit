@@ -19,22 +19,22 @@ const Workout = ({ workout, setCurrentId }) => {
       <React.Fragment>
         <span className="workoutHeader">
           <div className="row p-1">
-            <div className="col-sm-3">Activity Type</div>
-            <div className="col-sm-1 text-center">Sets</div>
-            <div className="col-sm-1 text-center">Reps</div>
-            <div className="col-sm-2 text-center">Weight</div>
-            <div className="col-sm-2 text-center">Equipment</div>
-            <div className="col-sm-3 text-center">Date</div>
+            <div className="col-3">Activity Type</div>
+            <div className="col-1 text-center">Sets</div>
+            <div className="col-1 text-center">Reps</div>
+            <div className="col-2 text-center">Weight</div>
+            <div className="col-2 text-center">Equipment</div>
+            <div className="col-3 text-center">Date</div>
           </div>
         </span>
         <span className="workoutDisplay">
           <div className="row p-1">
-            <div className="col-sm-3">{workout.workoutType}</div>
-            <div className="col-sm-1 text-center">{workout.setsCompleted}</div>
-            <div className="col-sm-1 text-center">{workout.repsCompleted}</div>
-            <div className="col-sm-2 text-center">{workout.weight}</div>
-            <div className="col-sm-2 text-center">{workout.equipmentUsed}</div>
-            <div className="col-sm-3 text-center">
+            <div className="col-3">{workout.workoutType}</div>
+            <div className="col-1 text-center">{workout.setsCompleted}</div>
+            <div className="col-1 text-center">{workout.repsCompleted}</div>
+            <div className="col-2 text-center">{workout.weight}</div>
+            <div className="col-2 text-center">{workout.equipmentUsed}</div>
+            <div className="col-3 text-center">
               {getDate(workout.createdAt)}
             </div>
           </div>

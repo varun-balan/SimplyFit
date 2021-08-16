@@ -18,12 +18,14 @@ p.main-home-text {
 span.workoutDisplay {
     background-color: lightskyblue;
     display: inline-block;
+    font-size: 12px;
 }
 
 span.workoutHeader {
     background-color: #007bff;
     font-weight: bolder;
     color: whitesmoke;
+    font-size: 12px;
 }
 
 button.deleteButton {
