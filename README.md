@@ -9,13 +9,10 @@
 On your local machine, client runs on `localhost` port `3000` and server runs on `5000`
 
 #### Todos
-1. Add logic where no weight option needs to have weight 0.
-2. Add a confirmation message when an activity has been added or edited.
-3. Fix warning of unnamed function export in reducer
-4. Message when unable to add workout due to incomplete fields
-5. Encapsulate each input field as its own component in Auth form
-6. Add show / hide password functionality
-
+1. Add logic where no weight option needs to have weight 0
+2. Add a confirmation message when an activity has been added or edited
+3. Alert when unable to add workout due to incomplete fields
+4. Searching and filtering in a "profile" tab
 
 #### Acknowledgements
 The main source of learning was from [JavaScript Mastery - YouTube](https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A).\
