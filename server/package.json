@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Project for tracking lifting progression",
   "main": "index.js",
+
   "type": "module",
   "scripts": {
     "start": "nodemon index.js"
