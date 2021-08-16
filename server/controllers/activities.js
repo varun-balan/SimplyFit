@@ -12,7 +12,7 @@ export const getWorkouts = async (req, res) => {
 
 export const createWorkout = async (req, res) => {
   const body = req.body;
-  const newWorkout = new WorkoutSchema(body);
+  const newWorkout = new WorkoutSchema({ ...body, creator: req.userId });
   try {
     await newWorkout.save();
     res.status(201).json(newWorkout);

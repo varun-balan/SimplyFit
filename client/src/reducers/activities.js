@@ -3,7 +3,7 @@
 
 import { FETCH_ALL, CREATE, DELETE, UPDATE } from "../constants/actionTypes.js";
 
-export default (activities = [], action) => {
+const activities = (activities = [], action) => {
   // Using switch instead of if else
   switch (action.type) {
     case FETCH_ALL:
@@ -20,3 +20,5 @@ export default (activities = [], action) => {
       return activities;
   }
 };
+
+export default activities;

@@ -53,3 +53,26 @@ button.editButton {
     border-bottom-right-radius: 5px;
 }
 
+div.authBackground {
+    background-color: skyblue;
+    color: black;
+    margin-top: 10px;
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+}
+
+button.switchAuthButton {
+    background: transparent;
+    border-style: solid;
+    border-color: transparent;
+    margin-top: 15px;
+}
+
+img.avatar {
+    border-radius: 50%;
+    width: 40%;
+    height: auto;
+    padding: 3px;
+}
+
+

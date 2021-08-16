@@ -31,6 +31,10 @@ const workoutSchema = mongoose.Schema({
     type: Date,
     default: new Date(),
   },
+  creator: {
+    type: String,
+    required: true,
+  },
 });
 
 const WorkoutSchema = mongoose.model("createWorkoutSchema", workoutSchema);

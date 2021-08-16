@@ -13,8 +13,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 // Setting up the routes using router module
-import mainpage from "./routes/activities.js";
-app.use("/workouts", mainpage);
+import workoutRoutes from "./routes/activities.js";
+import userRoutes from "./routes/users.js";
+app.use("/workouts", workoutRoutes);
+app.use("/users", userRoutes);
 
 const PORT = process.env.PORT || 5000;
 

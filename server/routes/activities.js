@@ -8,9 +8,11 @@ import {
   updateWorkout,
 } from "../controllers/activities.js";
 
-router.get("/", getWorkouts);
-router.post("/", createWorkout);
-router.patch("/:id", updateWorkout);
-router.delete("/:id", deleteWorkout);
+import auth from "../middleware/auth.js";
+
+router.get("/", auth, getWorkouts);
+router.post("/", auth, createWorkout);
+router.patch("/:id", auth, updateWorkout);
+router.delete("/:id", auth, deleteWorkout);
 
 export default router;

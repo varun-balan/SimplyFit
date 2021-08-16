@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import workoutTypes from "./workoutType.js";
+import workoutTypes from "../workoutType.js";
 
 import { useDispatch, useSelector } from "react-redux";
-import { createWorkout, updateWorkout } from "../actions/activities.js";
+import { createWorkout, updateWorkout } from "../../actions/activities.js";
 
 const AddActivityBar = ({ currentId, setCurrentId }) => {
   const [workoutData, setWorkoutData] = useState({
@@ -20,6 +20,8 @@ const AddActivityBar = ({ currentId, setCurrentId }) => {
   );
 
   const dispatch = useDispatch();
+
+  const user = JSON.parse(localStorage.getItem("profile"));
 
   useEffect(() => {
     if (workout) setWorkoutData(workout);
@@ -46,6 +48,14 @@ const AddActivityBar = ({ currentId, setCurrentId }) => {
     }
     clear();
   };
+
+  if (!user?.result?.name) {
+    return (
+      <p className="text-dark main-home-text">
+        Please Log In or Sign Up to Continue
+      </p>
+    );
+  }
 
   return (
     <div className="p-md-5">
@@ -90,7 +100,7 @@ const AddActivityBar = ({ currentId, setCurrentId }) => {
                   })
                 }
               >
-                <option key="default"/>
+                <option key="default" />
                 <option key="barbell">Barbell</option>
                 <option key="dumbbell">Dumbbell</option>
                 <option key="kettlebell">Kettlebell</option>
@@ -145,11 +155,10 @@ const AddActivityBar = ({ currentId, setCurrentId }) => {
                 }
               />
             </div>
-
           </div>
           <hr />
           <button type="submit" className="btn btn-outline-primary m-1">
-            {currentId === 0 ? "Add" : "Edit"}
+            {currentId === 0 ? "Add" : "Save"}
           </button>
           <button className="btn btn-outline-danger m-1" onClick={clear}>
             Clear
