@@ -18,6 +18,10 @@ import userRoutes from "./routes/users.js";
 app.use("/workouts", workoutRoutes);
 app.use("/users", userRoutes);
 
+app.use("/", (req, res) => {
+  res.send("Welcome to the SimplyFit Workout Tracker API");
+});
+
 const PORT = process.env.PORT || 5000;
 
 // Mongo standard connection
