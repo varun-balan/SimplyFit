@@ -1,7 +1,7 @@
 # SimplyFit Workout App
 
-Welcome to my first large-scale project: a full-stack web app using React.js, Express.js, Node.js and MongoDB. 
-This is a simple workout tracker where you can login (aftter signing up) to add, edit, delete and view workouts. The app is primarily for weightlifting with dropdowns of excercises, equipment used and input for reps, sets and weight.
+Welcome to my first project: a full-stack web app using React.js, Express.js, Node.js and MongoDB. 
+This is a workout tracker where you can login (after signing up) to add, edit, delete and view workouts. The app is primarily for weightlifting with dropdowns of excercises, equipment used and input for reps, sets and weight.
 
 This app is hosted on Heroku and is accessible [here](https://simplyfit-workouts.netlify.app)
 
@@ -13,7 +13,7 @@ This app is hosted on Heroku and is accessible [here](https://simplyfit-workouts
 	- Create (or Sign In to) an account at [MongoDB Cloud Atlas](https://account.mongodb.com/account/login)
 	- Create and build a cluster
 	- Add new database user with your own IP address (can use password authentication)
-	- Add your own IP address to the Network Access page
+	- Add your own IP address (to the Network Access page
 	- Go to cluster and connect with application
 	- Obtain the database string (replace placeholders with appropriate credentials) and paste into `.env.test`
 3. Set up Google authentication
@@ -29,7 +29,7 @@ This app is hosted on Heroku and is accessible [here](https://simplyfit-workouts
 	- In the project directory, run `npm install`
 	- Navigate to the client directory, run `npm install` then `npm start`
 	- Navigate to the server directory, run `npm install` then `npm start`
-6. If all works, the app should open on a new window (may need a refresh of page)
+6. If all works, the app should open on a new window (may need to refresh)
 
 
 ## Todos
@@ -37,6 +37,7 @@ This app is hosted on Heroku and is accessible [here](https://simplyfit-workouts
 2. Add a confirmation message when an activity has been added or edited
 3. Alert when unable to add workout or login / sign up due to incomplete fields or invalid input
 4. Searching and filtering in a "profile" tab
+5. Better mobile resizing of workouts
 
 
 #### Acknowledgements
