@@ -1,18 +1,43 @@
-# SimplyFit Workout App (MERN Stack)
+# SimplyFit Workout App
 
-## To run the app
-1. Navigate to the client directory, run `npm start`
-2. Set up MongoDB cluster (add IP address, user, etc.)
-3. Paste MongoDB Url into .env.test file
-4. Navigate to the server directory, run `npm start`
+Welcome to my first large-scale project: a full-stack web app using React.js, Express.js, Node.js and MongoDB. 
+This is a simple workout tracker where you can login (aftter signing up) to add, edit, delete and view workouts. The app is primarily for weightlifting with dropdowns of excercises, equipment used and input for reps, sets and weight.
 
-On your local machine, client runs on `localhost` port `3000` and server runs on `5000`
+This app is hosted on Heroku and is accessible [here](https://simplyfit-workouts.netlify.app)
 
-#### Todos
+
+## To run the app on Local Machine
+
+1. Clone this repository from Github
+2. Obtain MongoDB Atlas URL for database 
+	- Create (or Sign In to) an account at [MongoDB Cloud Atlas](https://account.mongodb.com/account/login)
+	- Create and build a cluster
+	- Add new database user with your own IP address (can use password authentication)
+	- Add your own IP address to the Network Access page
+	- Go to cluster and connect with application
+	- Obtain the database string (replace placeholders with appropriate credentials) and paste into `.env.test`
+3. Set up Google authentication
+	- Create (or Sign In to) an account at [Google Developers Console](https://console.developers.google.com/)
+	- Navigate to OAuth consent screen and resgister the app with your details
+	- Navigate to Credentials and create a new OAuth client ID with `http://localhost:3000` and `http://localhost:3000/auth` as redirect URLs
+	- Copy the generated client id and follow the instructions of `google_client_id_test.js` in `/client/src/components/Auth`
+4. Set up JSX authentication
+	- Navigate to `.env.test` in `/server` and replace `SECRET_KEY_JSON` with any secret string of your choice
+	- Set `PORT` to `5000`
+	- Rename `.env.test` to `.env`
+5. Run the App
+	- In the project directory, run `npm install`
+	- Navigate to the client directory, run `npm install` then `npm start`
+	- Navigate to the server directory, run `npm install` then `npm start`
+6. If all works, the app should open on a new window (may need a refresh of page)
+
+
+## Todos
 1. Add logic where no weight option needs to have weight 0
 2. Add a confirmation message when an activity has been added or edited
-3. Alert when unable to add workout due to incomplete fields
+3. Alert when unable to add workout or login / sign up due to incomplete fields or invalid input
 4. Searching and filtering in a "profile" tab
+
 
 #### Acknowledgements
 The main source of learning was from [JavaScript Mastery - YouTube](https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A).\
