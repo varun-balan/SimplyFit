@@ -4,6 +4,7 @@ Welcome to my first project: a full-stack web app using React.js, Express.js, No
 This is a workout tracker where you can login (after signing up) to add, edit, delete and view workouts. The app is primarily for weightlifting with dropdowns of excercises, equipment used and input for reps, sets and weight.
 
 This app is hosted on Heroku and is accessible [here](https://simplyfit-workouts.netlify.app)
+
 Note that it may not be 100% functional as Heroku, MongoDB, and Netlify change their terms and costs from time to time. Contact me at varun.balan@gmail.com if the app seems broken.
 
 
