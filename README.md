@@ -3,7 +3,7 @@
 Welcome to my first project: a full-stack web app using React.js, Express.js, Node.js and MongoDB. 
 This is a workout tracker where you can login (after signing up) to add, edit, delete and view workouts. The app is primarily for weightlifting with dropdowns of excercises, equipment used and input for reps, sets and weight.
 
-Note (Jul 24, 2022): MongoDB connection is broken. Need to update the app code to have logged workouts display again. Currently extremely busy with internship and school. Will get to it around end August 2022.
+### Note (Jul 24, 2022): MongoDB connection is broken. Need to update the app code to have logged workouts display again. Currently busy with internship and school. Will get to around end August 2022.
 
 This app is accessible [here](https://simplyfit-workouts.netlify.app)
 
